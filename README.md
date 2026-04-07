@@ -1,1 +1,1 @@
-# robot-framework-lint-rules
+# Robot Framework Lint Rules for Team
