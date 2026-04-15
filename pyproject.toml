@@ -8,3 +8,8 @@ dependencies = [
     "robotframework>=7.4.2",
     "robotframework-robocop>=8.2.7",
 ]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.1",
+]
