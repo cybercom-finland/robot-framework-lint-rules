@@ -1,0 +1,10 @@
+# (TODO): Placeholder toml, this should be extended
+
+[tool.robotcode]
+python-path = ["./libraries"]
+
+[tool.robotcode.robot]
+paths = ["./processes", "./tests"]
+
+[tool.robotcode.lint]
+enabled = true

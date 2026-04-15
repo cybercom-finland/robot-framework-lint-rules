@@ -15,3 +15,13 @@ you're good to go 🕶️
 ## Tooling
 
 This project uses `uv` for Python dependencies and running commands.
+
+
+## Install RobotCode Extension for VS Code
+
+This project uses the Robotcode extensions that contains linting, formatting, debugging and more for Robot Framework. The extension should be enforced with via workspace recommendations, but if you don't have it installed, you can do so by following these steps:
+
+- Open VS Code
+- Go to Extensions
+- Search for "RobotCode"
+- Install
