@@ -1,0 +1,21 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.10
+    hooks:
+      - id: ruff-check
+      - id: ruff-format
+
+  - repo: https://github.com/MarketSquare/robotframework-robocop
+    rev: v8.2.7
+    hooks:
+      - id: robocop
+        args: ["check"]
+      - id: robocop
+        name: robocop-format
+        args: ["format"]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
