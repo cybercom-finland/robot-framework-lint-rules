@@ -8,7 +8,6 @@ paths = ["./processes", "./tests"]
 enabled = true
 
 [tool.robocop]
-exclude = ["deprecated.robot", "test.robot"]
 language = ["en", "fi"]
 
 [tool.robocop.lint]
