@@ -15,10 +15,19 @@ dev = [
     "pre-commit>=4.5.1",
 ]
 
-# placeholder
+# Ruff configs
 [tool.ruff]
-line-length = 100
-target-version = "py314"
+line-length = 110
+indent-width = 4
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "B"]
+select = [
+    "E",    # pycodestyles errors
+    "F",    # pyflakes
+    "B",    # flake8-bugbear
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
