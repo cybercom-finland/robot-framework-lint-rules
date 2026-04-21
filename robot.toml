@@ -11,21 +11,11 @@ enabled = true
 language = ["en", "fi"]
 
 [tool.robocop.lint]
-select = [
-    "rulename",
-    "ruleid"
-]
-extend-select = [
-    "additional-rule"
-]
 ignore = [
     "missing-doc-test-case",
     "missing-doc-keyword",
     "no-test-variable",
 ]
-reports = ["all", "sarif"]
-persistent = true
-compare = true
 configure = [
     "line-too-long.line_length=110"
 ]
@@ -35,9 +25,4 @@ select = ["NormalizeNewLines"]
 configure = [
     "NormalizeNewLines.section_lines=2"
 ]
-diff = true
 line_length = 110
-skip = [
-    "documentation"
-]
-reruns = 3
