@@ -2,7 +2,7 @@
 python-path = ["./libraries"]
 
 [tool.robotcode.robot]
-paths = ["./processes", "./tests"]
+paths = ["./tasks", "./tests"]
 
 [tool.robotcode.lint]
 enabled = true
@@ -19,7 +19,9 @@ extend-select = [
     "additional-rule"
 ]
 ignore = [
-    "ruleid"
+    "missing-doc-test-case",
+    "missing-doc-keyword",
+    "no-test-variable",
 ]
 reports = ["all", "sarif"]
 persistent = true
@@ -31,7 +33,7 @@ configure = [
 [tool.robocop.format]
 select = ["NormalizeNewLines"]
 configure = [
-    "NormalizeNewLines.section_lines=1"
+    "NormalizeNewLines.section_lines=2"
 ]
 diff = true
 line_length = 110
