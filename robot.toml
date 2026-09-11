@@ -12,6 +12,7 @@ language = ["en", "fi"]
 
 [tool.robocop.lint]
 ignore = [
+    "missing-doc-resource-file",
     "missing-doc-test-case",
     "missing-doc-keyword",
     "no-test-variable",
@@ -26,3 +27,21 @@ configure = [
     "NormalizeNewLines.section_lines=2"
 ]
 line_length = 110
+
+[tool.robotidy]
+transform = [
+    "AlignKeywordsSection",
+    "AlignTestCasesSection",
+    "SplitTooLongLine"
+]
+
+configure = [
+    "NormalizeAssignments:equal_sign_type_variables=autodetect",
+    "OrderSettingsSection:new_lines_between_groups=0",  # No newlines added to settings section
+    "NormalizeTags:normalize_case=False",  # Does not normalize tags
+    "AlignVariablesSection:up_to_column=0",  # Aligns all columns in variables section
+    "SplitTooLongLine:line_length=110",  # Splits lines longer than 110 characters
+    "RenameTestCases:capitalize_each_word=True",  # Capitalizes each word in test case names
+    "RenameKeywords:enabled=True",  # Renames keywords in title case and replaces undescores with spaces
+    "InlineIf:enabled=False"  # Does not replace short IF statements with inline IF
+]
