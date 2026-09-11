@@ -9,10 +9,11 @@ repos:
     rev: v8.2.7
     hooks:
       - id: robocop
-        args: ["check"]
-      - id: robocop
+        name: robocop-check
+        args: ["."]
+      - id: robocop-format
         name: robocop-format
-        args: ["format"]
+        args: ["."]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
